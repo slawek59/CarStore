@@ -1,0 +1,10 @@
+C:\Users\wassl\OneDrive\Pulpit\SLAWOMIR\Kodowanie\CarStore\CarClassLibrary\CarShopConsoleApp\bin\Debug\CarShopConsoleApp.exe.config
+C:\Users\wassl\OneDrive\Pulpit\SLAWOMIR\Kodowanie\CarStore\CarClassLibrary\CarShopConsoleApp\bin\Debug\CarShopConsoleApp.exe
+C:\Users\wassl\OneDrive\Pulpit\SLAWOMIR\Kodowanie\CarStore\CarClassLibrary\CarShopConsoleApp\bin\Debug\CarShopConsoleApp.pdb
+C:\Users\wassl\OneDrive\Pulpit\SLAWOMIR\Kodowanie\CarStore\CarClassLibrary\CarShopConsoleApp\bin\Debug\CarClassLibrary.dll
+C:\Users\wassl\OneDrive\Pulpit\SLAWOMIR\Kodowanie\CarStore\CarClassLibrary\CarShopConsoleApp\bin\Debug\CarClassLibrary.pdb
+C:\Users\wassl\OneDrive\Pulpit\SLAWOMIR\Kodowanie\CarStore\CarClassLibrary\CarShopConsoleApp\obj\Debug\CarShopConsoleApp.csproj.AssemblyReference.cache
+C:\Users\wassl\OneDrive\Pulpit\SLAWOMIR\Kodowanie\CarStore\CarClassLibrary\CarShopConsoleApp\obj\Debug\CarShopConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\wassl\OneDrive\Pulpit\SLAWOMIR\Kodowanie\CarStore\CarClassLibrary\CarShopConsoleApp\obj\Debug\CarShopConsoleApp.csproj.CopyComplete
+C:\Users\wassl\OneDrive\Pulpit\SLAWOMIR\Kodowanie\CarStore\CarClassLibrary\CarShopConsoleApp\obj\Debug\CarShopConsoleApp.exe
+C:\Users\wassl\OneDrive\Pulpit\SLAWOMIR\Kodowanie\CarStore\CarClassLibrary\CarShopConsoleApp\obj\Debug\CarShopConsoleApp.pdb
