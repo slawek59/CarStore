@@ -128,7 +128,7 @@
 			this.groupBox2.Controls.Add(this.lst_inventory);
 			this.groupBox2.Location = new System.Drawing.Point(295, 32);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(215, 395);
+			this.groupBox2.Size = new System.Drawing.Size(346, 395);
 			this.groupBox2.TabIndex = 1;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Car Inventory";
@@ -140,14 +140,14 @@
 			this.lst_inventory.ItemHeight = 20;
 			this.lst_inventory.Location = new System.Drawing.Point(6, 37);
 			this.lst_inventory.Name = "lst_inventory";
-			this.lst_inventory.Size = new System.Drawing.Size(203, 324);
+			this.lst_inventory.Size = new System.Drawing.Size(332, 324);
 			this.lst_inventory.TabIndex = 0;
 			// 
 			// btn_addtocart
 			// 
-			this.btn_addtocart.Location = new System.Drawing.Point(516, 215);
+			this.btn_addtocart.Location = new System.Drawing.Point(647, 208);
 			this.btn_addtocart.Name = "btn_addtocart";
-			this.btn_addtocart.Size = new System.Drawing.Size(128, 68);
+			this.btn_addtocart.Size = new System.Drawing.Size(238, 68);
 			this.btn_addtocart.TabIndex = 2;
 			this.btn_addtocart.Text = "Add to Cart -->";
 			this.btn_addtocart.UseVisualStyleBackColor = true;
@@ -156,9 +156,9 @@
 			// groupBox3
 			// 
 			this.groupBox3.Controls.Add(this.lst_cart);
-			this.groupBox3.Location = new System.Drawing.Point(661, 32);
+			this.groupBox3.Location = new System.Drawing.Point(891, 32);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(215, 296);
+			this.groupBox3.Size = new System.Drawing.Size(339, 296);
 			this.groupBox3.TabIndex = 3;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Shopping Cart";
@@ -169,14 +169,14 @@
 			this.lst_cart.ItemHeight = 20;
 			this.lst_cart.Location = new System.Drawing.Point(6, 37);
 			this.lst_cart.Name = "lst_cart";
-			this.lst_cart.Size = new System.Drawing.Size(203, 244);
+			this.lst_cart.Size = new System.Drawing.Size(304, 244);
 			this.lst_cart.TabIndex = 0;
 			// 
 			// btn_checkout
 			// 
-			this.btn_checkout.Location = new System.Drawing.Point(721, 334);
+			this.btn_checkout.Location = new System.Drawing.Point(951, 334);
 			this.btn_checkout.Name = "btn_checkout";
-			this.btn_checkout.Size = new System.Drawing.Size(96, 40);
+			this.btn_checkout.Size = new System.Drawing.Size(220, 40);
 			this.btn_checkout.TabIndex = 4;
 			this.btn_checkout.Text = "Checkout";
 			this.btn_checkout.UseVisualStyleBackColor = true;
@@ -185,18 +185,18 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(621, 396);
+			this.label4.Location = new System.Drawing.Point(851, 396);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(128, 30);
+			this.label4.Size = new System.Drawing.Size(85, 20);
 			this.label4.TabIndex = 5;
 			this.label4.Text = "Total Cost:";
 			// 
 			// lbl_total
 			// 
 			this.lbl_total.AutoSize = true;
-			this.lbl_total.Location = new System.Drawing.Point(717, 396);
+			this.lbl_total.Location = new System.Drawing.Point(947, 396);
 			this.lbl_total.Name = "lbl_total";
-			this.lbl_total.Size = new System.Drawing.Size(74, 30);
+			this.lbl_total.Size = new System.Drawing.Size(49, 20);
 			this.lbl_total.TabIndex = 6;
 			this.lbl_total.Text = "$0.00";
 			// 
@@ -204,7 +204,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(912, 455);
+			this.ClientSize = new System.Drawing.Size(1266, 455);
 			this.Controls.Add(this.lbl_total);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.btn_checkout);
@@ -214,6 +214,7 @@
 			this.Controls.Add(this.groupBox1);
 			this.Name = "Form1";
 			this.Text = "Form1";
+			this.Load += new System.EventHandler(this.Form1_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.groupBox2.ResumeLayout(false);
