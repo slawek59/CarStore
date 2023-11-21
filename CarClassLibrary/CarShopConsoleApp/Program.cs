@@ -62,43 +62,25 @@ namespace CarShopConsoleApp
 
 						newStore.ShoppingList.Add(newStore.CarList[carChosen]);
 
-						printShoppingList(newStore);
+						printShoppingCart(newStore);
 
                         break;
 
+					case 3:
+						printShoppingCart(newStore);
+                        Console.WriteLine($"Total cost of your cart is: {newStore.Checkout()}");
+                        break;
 
-                    default:
+					default:
 						break;
 				}
 
 				action = chooseAction();
             }
 
-   //         Car carOne = new Car("Audi", "A6", 10.000M);
-			//Car carTwo = new Car("Volkswagen", "Passat", 100.000M);
-			
-   //         Console.WriteLine("Car carOne is as follows: " 
-			//	+ carOne.Make + " " 
-			//	+ carOne.Model + " " 
-			//	+ carOne.Price + "$");
-
-   //         Console.WriteLine("Car carTwo is as follows: " 
-			//	+ carTwo.Make + " " 
-			//	+ carTwo.Model + " " 
-			//	+ carTwo.Price + "$");
-
-			//Store storeOne = new Store();
-
-			//storeOne.ShoppingList.Add(carOne);
-			//storeOne.ShoppingList.Add(carTwo);
-
-			//decimal total = storeOne.Checkout();
-
-   //         Console.WriteLine("Total: " + total);
-
         }
 
-		private static void printShoppingList(Store newStore)
+		private static void printShoppingCart(Store newStore)
 		{
             Console.WriteLine("Cars you have chosen to buy:");
             for (int i = 0; i < newStore.ShoppingList.Count; i++)
