@@ -27,6 +27,7 @@ namespace CarShopConsoleApp
 
 				switch (action)
 				{
+					// Add to inventory
 					case 1:
 						Console.WriteLine("You chose to add a new car to the invenory.");
 
@@ -49,6 +50,21 @@ namespace CarShopConsoleApp
 
 						printInventory(newStore);
 						break;
+
+					// Add to cart
+					case 2:
+
+                        Console.WriteLine("You chose to add a car to your shopping cart.");
+						printInventory(newStore);
+
+                        Console.WriteLine("Which item would you like to buy? (number)");
+						int carChosen = int.Parse(Console.ReadLine()) - 1;
+
+						newStore.ShoppingList.Add(newStore.CarList[carChosen]);
+
+						printShoppingList(newStore);
+
+                        break;
 
 
                     default:
@@ -82,14 +98,26 @@ namespace CarShopConsoleApp
 
         }
 
+		private static void printShoppingList(Store newStore)
+		{
+            Console.WriteLine("Cars you have chosen to buy:");
+            for (int i = 0; i < newStore.ShoppingList.Count; i++)
+			{
+				Console.WriteLine(newStore.ShoppingList[i]);
+				Console.WriteLine("___________");
+			}
+		}
+
 		private static void printInventory(Store newStore)
 		{
 			Console.WriteLine("_______________________");
-			foreach (Car car in newStore.CarList)
+
+			for (int i = 0; i < newStore.CarList.Count; i++)
 			{
-                Console.WriteLine("Car:\n" + car.ToString());
+                Console.WriteLine($"Car:\n#{i + 1}\n{newStore.CarList[i]}");
                 Console.WriteLine("___________");
             }
+
 			Console.WriteLine("_______________________");
 
 		}
