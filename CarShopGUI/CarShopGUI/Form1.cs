@@ -27,16 +27,20 @@ namespace CarShopGUI
 
 		}
 
-		private void button2_Click(object sender, EventArgs e)
+		private void btn_addtocart_Click(object sender, EventArgs e)
 		{
+			Car selected = (Car)lst_inventory.SelectedItem;
 
+			myStore.ShoppingList.Add(selected);
+
+			shoppingCartBindingSource.ResetBindings(false);
 		}
 
 		private void btn_create_car_Click(object sender, EventArgs e)
 		{
 			Car newCar = new Car(txt_make.Text, txt_model.Text, decimal.Parse(txt_price.Text));
 
-			MessageBox.Show(newCar.ToString());
+			// MessageBox.Show(newCar.ToString());
 			myStore.CarList.Add(newCar);
 			carInventoryBindingSource.ResetBindings(false);
 
@@ -47,15 +51,21 @@ namespace CarShopGUI
 
 		private void btn_checkout_Click(object sender, EventArgs e)
 		{
-
+			
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			carInventoryBindingSource.DataSource = myStore.CarList;
+			shoppingCartBindingSource.DataSource = myStore.ShoppingList;
+
 
 			lst_inventory.DataSource = carInventoryBindingSource;
 			lst_inventory.DisplayMember = ToString();
+
+
+			lst_cart.DataSource = shoppingCartBindingSource;
+			lst_cart.DisplayMember = ToString();
 		}
 	}
 }

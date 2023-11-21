@@ -151,7 +151,7 @@
 			this.btn_addtocart.TabIndex = 2;
 			this.btn_addtocart.Text = "Add to Cart -->";
 			this.btn_addtocart.UseVisualStyleBackColor = true;
-			this.btn_addtocart.Click += new System.EventHandler(this.button2_Click);
+			this.btn_addtocart.Click += new System.EventHandler(this.btn_addtocart_Click);
 			// 
 			// groupBox3
 			// 
