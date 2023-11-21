@@ -25,5 +25,10 @@ namespace CarClassLibrary
 			this.Model = Model;
 			this.Price = Price;
 		}
+
+		override public string ToString()
+		{
+			return $"Make: {Make}\nModel: {Model}\nPrice: ${Price}.";
+		}
 	}
 }
