@@ -16,6 +16,7 @@ namespace CarShopGUI
 		Store myStore = new Store();
 		BindingSource carInventoryBindingSource = new BindingSource();
 		BindingSource shoppingCartBindingSource = new BindingSource();
+		BindingSource checkoutBindingSource = new BindingSource();
 
 		public Form1()
 		{
@@ -38,7 +39,17 @@ namespace CarShopGUI
 
 		private void btn_create_car_Click(object sender, EventArgs e)
 		{
-			Car newCar = new Car(txt_make.Text, txt_model.Text, decimal.Parse(txt_price.Text));
+			Car newCar = new Car(txt_make.Text, txt_model.Text, 0);
+
+			try
+			{
+				newCar.Price = decimal.Parse(txt_price.Text);
+			}
+			catch (Exception)
+			{
+
+				throw new Exception("NOOOOOOOOOOOOOOOO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!☹☹☹☹☹☹☹☹☹☹☹☹☹");
+			}
 
 			// MessageBox.Show(newCar.ToString());
 			myStore.CarList.Add(newCar);
@@ -51,7 +62,11 @@ namespace CarShopGUI
 
 		private void btn_checkout_Click(object sender, EventArgs e)
 		{
-			
+			decimal totalPrice = myStore.Checkout();
+
+			lbl_total.Text = $"${totalPrice.ToString()}";
+
+			shoppingCartBindingSource.ResetBindings(false);
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
@@ -59,13 +74,13 @@ namespace CarShopGUI
 			carInventoryBindingSource.DataSource = myStore.CarList;
 			shoppingCartBindingSource.DataSource = myStore.ShoppingList;
 
-
 			lst_inventory.DataSource = carInventoryBindingSource;
 			lst_inventory.DisplayMember = ToString();
 
 
 			lst_cart.DataSource = shoppingCartBindingSource;
 			lst_cart.DisplayMember = ToString();
+
 		}
 	}
 }
